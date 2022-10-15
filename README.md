@@ -11,3 +11,4 @@
 - call the /users endpoint, page through responses and save these records to the sqlite db table
 - query the db table of users and export this data to a csv file that is saved locally
 - should be generally idempotent and cover basic error handling (no need to cover every possible situation, but if a password does not meet the apis expectation, i would expect this to be displayed to the user rather than to simply crash)
+- This repo should be used to submit a PR of the code for review. 
