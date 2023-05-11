@@ -1,8 +1,9 @@
 # newdev
 - i estimate this should take no longer than 1-2 hours. 
 - the purpose of this is to present general ETL ability in .net. I expect most of the concepts used here will be very familiar.
+- Fork this repo and generate a PR in that repo and email a link to the PR to your YD point of contact for code review
 ## Scope 
-- .net6 console app 
+- single file .net6 console app built for win64
 - use any thirdparty packages you wish
 - http://restapi.adequateshop.com api (this is the api that will be used for this application, documentation can be found at https://www.appsloveworld.com/sample-rest-api-url-for-testing-with-authentication)
 - need to allow a user to input an email and password (simple command line entry is fine)
@@ -11,4 +12,4 @@
 - call the /users endpoint, page through responses and save these records to the sqlite db table
 - query the db table of users and export this data to a csv file that is saved locally
 - should be generally idempotent and cover basic error handling (no need to cover every possible situation, but if a password does not meet the apis expectation, i would expect this to be displayed to the user rather than to simply crash)
-- This repo should be used to submit a PR of the code for review. 
+
