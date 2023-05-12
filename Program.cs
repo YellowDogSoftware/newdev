@@ -43,7 +43,6 @@ public class Program
 {
     private static string? AuthToken { get; set; }
 
-    // dotnet run register -u <email> -p <password>
     public static void Main(string[] args) 
     {
         // if user table exists, ignore it
@@ -181,8 +180,6 @@ public class Program
         using SQLiteCommand command = new("INSERT INTO Users (name, email, createdAt) VALUES (@Name, @Email, DATE())", connection);
         command.Parameters.AddWithValue("@Name", user.Name);
         command.Parameters.AddWithValue("@Email", user.Email);
-        command.ExecuteNonQuery();
-        
         command.ExecuteNonQuery();
         
         connection.Close();
